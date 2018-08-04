@@ -59,9 +59,8 @@ export class ClientListComponent implements OnInit {
     this.form.resetForm();
   }
 
-  itemDelete(item) {
-    console.log(item);
-    this.clientlist.splice(this.clientlist.indexOf(item), 1);
+  itemDelete(index) {
+    this.clientlist.splice(index, 1);
   }
 
 }
